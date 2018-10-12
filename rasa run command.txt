@@ -1,0 +1,5 @@
+C:\Users\joe\Desktop\Weatherbot>python -m rasa_core.run -d models/current/dialogue -u models/nlu/default/weathernlu
+C:\Users\joe\Desktop\Weatherbot>python -m rasa_core.server -d models/current/dialogue -u models/nlu/default/weathernlu -o log.txt -p 5005
+action_endpoint:
+  url: "http://localhost:5055/webhook"
+$ python -m rasa_core.run --enable_api -d models/dialogue -u models/nlu/current --endpoints endpoints.yml -o out.log -p 5004
